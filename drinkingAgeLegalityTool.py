@@ -29,7 +29,7 @@ if WA_resident == "NO":
 
         print("\n")
     print("\n")
-    
+
     ##California has laws that allow people <21 to drink a small amount of alcohol for religious purposes##
     california = str(input("Are you inquiring about California? Enter YES or NO: "))
     if california == "YES":
