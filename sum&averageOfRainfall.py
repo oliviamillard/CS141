@@ -7,7 +7,6 @@ import math
 print("Hey there. I heard you've been collecting some rainfall data!\nInput your data and I'll find out how much total rainfall you've collected.")
 print("I'll then take the average of that! Let's go!")
 print("\n")
-"""Variables"""
 
 total_days = float(input("How many days of data collection do you have?\nEnter an integer: "))
 if total_days > 1:
