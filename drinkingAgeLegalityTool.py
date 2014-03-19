@@ -68,9 +68,9 @@ if WA_resident == "NO":
             ##In Georgia and Wisconsin people <21 can drink if their parent(s)/legal guardian(s) or spouse is present##
             georgia_wisconsin = str(input("Are you inquiring about Georgia or Wisconsin? Enter YES or NO: "))
             if georgia_wisconsin == "YES":
+                state_name = "Georgia and Wisconsin"
                 exception_2 = str(input("Are your parents, legal guardians, and/or spouse present? Enter YES or NO: "))
                 if exception_2 == "YES":
-                    state_name = "Georgia and Wisconsin"
                     if birth_year == 1993 and birth_month == 3 or birth_year <= 1993 and birth_month <= 3:
                         print("You can actively enjoy your alcohol in the ENTIRE United States!")
                         print("Congrats on your accomplishment!")
