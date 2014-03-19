@@ -50,6 +50,20 @@ if WA_resident == "NO":
     if california == "NO":
         ##Kansas allows people <21 to drink on one's own property##
         kansas = str(input("Are you inquiring about Kansas? Enter YES or NO: "))
+        if kansas == "YES":
+            exception_3 = str(input("Will you be consuming alcohol on your own property? Enter YES or NO: "))
+            print("\n")
+            if exception_3 == "YES":
+                if birth_year == 1993 and birth_month == 3 or birth_year <= 1993 and birth_month <= 3:
+                    print("It doesn't matter why you're consuming alcohol!\nYou can drink in the entire United States!\nCongrats!")
+                if birth_year >= 1993 and birth_month > 3 or birth_year > 1993:
+                    print("You can drink alcohol as long as it's on your personal property.\nBut only in Kansas, it's illegal for you in all other states.")
+            if exception_3 == "NO":
+                if birth_year == 1993 and birth_month == 3 or birth_year <= 1993 and birth_month <= 3:
+                    print("It doesn't matter why you're consuming alcohol!\nYou can drink in the entire United States!\nCongrats!")
+                if birth_year >= 1993 and birth_month > 3 or birth_year > 1993:
+                    print("Sorry... you cannot drink in Kansas\nBe patient, your time will come...")
+            if exception_3 == "NO":
         if kansas == "NO":
             ##In Georgia and Wisconsin people <21 can drink if their parent(s)/legal guardian(s) or spouse is present##
             georgia_wisconsin = str(input("Are you inquiring about Georgia or Wisconsin? Enter YES or NO: "))
@@ -82,14 +96,7 @@ if WA_resident == "NO":
                     print("Be patient and give it some time.")
                     print("Sorry :(")
 
-        if kansas == "YES":
-            exception_3 = str(input("Will you be consuming alcohol on your own property? Enter YES or NO: "))
-            print("\n")
-            if exception_3 == "YES":
-                if birth_year == 1993 and birth_month == 3 or birth_year <= 1993 and birth_month <= 3:
-                    print("It doesn't matter why you're consuming alcohol!\nYou can drink in the entire United States!\nCongrats!")
-                if birth_year >= 1993 and birth_month > 3 or birth_year > 1993:
-                    print("You can drink alcohol as long as it's on your personal property.\nBut only in Kansas, it's illegal for you in all other states.")
+        
                     
 ## This portion of the program determines legality based upon birth year/month for WA. ##
 if WA_resident == "YES":
