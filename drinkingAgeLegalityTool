@@ -25,6 +25,8 @@ if WA_resident == "NO":
     birth_month = int(input("What is your birth month? (e.g. 4 for April): "))
     if birth_month == 0 or birth_month > 12:
         print("Please enter in a valid month. ")
+        birth_month = int(input("What is your birth month? (e.g. 4 for April): "))
+
         print("\n")
     print("\n")
     
@@ -44,10 +46,11 @@ if WA_resident == "NO":
                 print("It doesn't matter why you're consuming alcohol!\nYou can drink in the entire United States!\nCongrats!")
             if birth_year >= 1993 and birth_month > 3 or birth_year > 1993:
                 print("You can consume alcohol in this way in the state of California.\nJust don't do it anywhere else.\nBecause that'd be illegal...")
+                
     if california == "NO":
+        ##Kansas allows people <21 to drink on one's own property##
         kansas = str(input("Are you inquiring about Kansas? Enter YES or NO: "))
         if kansas == "NO":
-            
             ##In Georgia and Wisconsin people <21 can drink if their parent(s)/legal guardian(s) or spouse is present##
             georgia_wisconsin = str(input("Are you inquiring about Georgia or Wisconsin? Enter YES or NO: "))
             if georgia_wisconsin == "YES":
@@ -67,6 +70,7 @@ if WA_resident == "NO":
                         print("I am sorry, you cannot legally consume alcohol in " +str(state_name)+ ".")
                         print("Be patient and give it some time.")
                         print("Sorry :(")
+                        
             if georgia_wisconsin == "NO":
                 ##This block of code is solely to determine the user's eligibity in remaining states##
                 state_name = str(input("What state are you inquiring about? "))
@@ -78,7 +82,6 @@ if WA_resident == "NO":
                     print("Be patient and give it some time.")
                     print("Sorry :(")
 
-        ##Kansas allows people <21 to drink on one's own property##
         if kansas == "YES":
             exception_3 = str(input("Will you be consuming alcohol on your own property? Enter YES or NO: "))
             print("\n")
@@ -96,6 +99,7 @@ if WA_resident == "YES":
     print("\n")
     if birth_month == 0 or birth_month > 12:
         print("Please enter in a valid month. ")
+        birth_month = int(input("What is your birth month? (e.g. 4 for April): "))
         print("\n")
     if birth_year == 1993 and birth_month == 3 or birth_year <= 1993 and birth_month <= 3:
         print("You can actively enjoy your alcohol in the ENTIRE United States!")
