@@ -63,7 +63,7 @@ if WA_resident == "NO":
                     print("It doesn't matter why you're consuming alcohol!\nYou can drink in the entire United States!\nCongrats!")
                 if birth_year >= 1993 and birth_month > 3 or birth_year > 1993:
                     print("Sorry... you cannot drink in Kansas\nBe patient, your time will come...")
-            if exception_3 == "NO":
+            
         if kansas == "NO":
             ##In Georgia and Wisconsin people <21 can drink if their parent(s)/legal guardian(s) or spouse is present##
             georgia_wisconsin = str(input("Are you inquiring about Georgia or Wisconsin? Enter YES or NO: "))
