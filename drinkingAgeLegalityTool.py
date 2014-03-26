@@ -107,10 +107,9 @@ main()
 
 ## Short function to end the program ##
 def endTool():
-    print("\nThank you for using this tool!")
+    print("\nThank you for using this tool.")
     input("Press enter to quit... goodbye.")
     
 endTool()
 
 
- 
