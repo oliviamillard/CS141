@@ -78,7 +78,7 @@ def main():
                     if birth_year >= 1993 and birth_month > 3 or birth_year > 1993:
                         print("\nI am sorry, you cannot legally consume alcohol in " +str(state_name)+ ".")
                         print("Be patient and give it some time.")
-                        print("nSorry :(")
+                        print("Sorry :(")
 
             if kansas == "YES":
                 exception_3 = str(input("Will you be consuming alcohol on your own property? Enter YES or NO: "))
