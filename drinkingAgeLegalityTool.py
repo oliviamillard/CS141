@@ -1,4 +1,3 @@
-#Olivia Millard - Homework 1a
 #This program will determine the legality of one's ability to drink in their state or in the entire US.
 
 #Welcome message.
@@ -61,6 +60,7 @@ def main():
                         if birth_year >= 1993 and birth_month > 3 or birth_year > 1993:
                             print("\nCool-- you can legally consume alcohol in Wisconsin and Georgia.\nBut not in any other US state.\nSorry :(")
                     if exception_2 == "NO":
+                        state_name = "Georgia and Wisconsin"
                         if birth_year == 1993 and birth_month == 3 or birth_year <= 1993 and birth_month <= 3:
                             print("\nYou can actively enjoy your alcohol in the ENTIRE United States!")
                             print("Congrats on your accomplishment!")
@@ -107,9 +107,8 @@ main()
 
 ## Short function to end the program ##
 def endTool():
+    print("___________________")
     print("\nThank you for using this tool.")
     input("Press enter to quit... goodbye.")
     
 endTool()
-
-
